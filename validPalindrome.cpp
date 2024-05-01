@@ -13,13 +13,9 @@ public:
             {
                 vPal.push_back(tolower(s[i]));
             }
-        }
-
-        for (int i = iSize-1 ; i >= 0; i--)
-        {
-            if (isalnum(s[i]))
+            if (isalnum(s[iSize - (i+1)]))
             {
-                vTemp.push_back(tolower(s[i]));
+                vTemp.push_back(tolower(s[iSize - (i+1)]));
             }
         }
 
